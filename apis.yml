@@ -3,21 +3,39 @@ url: https://raw.githubusercontent.com/api-evangelist/chameleon/refs/heads/main/
 name: Chameleon
 x-type: company
 description: >-
-  Chameleon is an in-product engagement platform for tooltips, walkthroughs, surveys, microsurveys, and announcements with strong design controls and targeting.
+  Chameleon delivers in-app product tours, microsurveys, tooltips, launchers, and product demos to drive activation and feedback.
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - Product
+  - In-App Guidance
   - Onboarding
-  - In-App
-  - Personalization
-  - Engagement
+  - Surveys
+  - Analytics
 created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.19'
-apis: []
+apis:
+  - aid: chameleon:chameleon-rest-api
+    name: Chameleon REST API
+    description: >-
+      Chameleon REST API for managing user profiles, companies, tours, microsurveys, embeddables, segments, themes, webhooks, and other Experiences.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developers.chameleon.io/
+    baseURL: https://api.chameleon.io/v3
+    tags:
+      - Product
+      - In-App Guidance
+      - REST
+    properties:
+      - type: Documentation
+        url: https://developers.chameleon.io/
+      - type: Authentication
+        url: https://developers.chameleon.io/api-introduction/authentication
 common:
   - type: Website
     url: https://www.chameleon.io/
+  - type: Documentation
+    url: https://developers.chameleon.io/
   - type: Plans
     url: plans/chameleon-plans-pricing.yml
   - type: RateLimits
