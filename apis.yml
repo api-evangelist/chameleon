@@ -1,0 +1,29 @@
+aid: chameleon
+url: https://raw.githubusercontent.com/api-evangelist/chameleon/refs/heads/main/apis.yml
+name: Chameleon
+x-type: company
+description: >-
+  Chameleon is an in-product engagement platform for tooltips, walkthroughs, surveys, microsurveys, and announcements with strong design controls and targeting.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Product
+  - Onboarding
+  - In-App
+  - Personalization
+  - Engagement
+created: '2026-05-08'
+modified: '2026-05-08'
+specificationVersion: '0.19'
+apis: []
+common:
+  - type: Website
+    url: https://www.chameleon.io/
+  - type: Plans
+    url: plans/chameleon-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/chameleon-rate-limits.yml
+  - type: FinOps
+    url: finops/chameleon-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
