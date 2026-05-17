@@ -1,7 +1,7 @@
 aid: chameleon
 url: https://raw.githubusercontent.com/api-evangelist/chameleon/refs/heads/main/apis.yml
 name: Chameleon
-x-type: company
+kind: company
 description: >-
   Chameleon delivers in-app product tours, microsurveys, tooltips, launchers, and product demos to drive activation and feedback.
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
