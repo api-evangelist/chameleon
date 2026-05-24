@@ -44,6 +44,8 @@ common:
     url: rate-limits/chameleon-rate-limits.yml
   - type: FinOps
     url: finops/chameleon-finops.yml
+  - type: LLMsTxt
+    url: https://developers.chameleon.io/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
