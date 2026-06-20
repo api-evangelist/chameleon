@@ -4,7 +4,7 @@ name: Chameleon
 kind: company
 description: >-
   Chameleon delivers in-app product tours, microsurveys, tooltips, launchers, and product demos to drive activation and feedback.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Product
   - In-App Guidance
@@ -19,7 +19,7 @@ apis:
     name: Chameleon REST API
     description: >-
       Chameleon REST API for managing user profiles, companies, tours, microsurveys, embeddables, segments, themes, webhooks, and other Experiences.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://developers.chameleon.io/
     baseURL: https://api.chameleon.io/v3
     tags:
