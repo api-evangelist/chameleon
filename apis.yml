@@ -32,6 +32,12 @@ apis:
       - type: Authentication
         url: https://developers.chameleon.io/api-introduction/authentication
 common:
+  - type: TrustCenter
+    url: security/chameleon-trust-center.yml
+  - type: DomainSecurity
+    url: security/chameleon-domain-security.yml
+  - type: Authentication
+    url: authentication/chameleon-authentication.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/chameleon-io
   - type: Website

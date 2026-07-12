@@ -1,0 +1,16 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/chameleon-openapi.yml
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+schemes:
+- name: accountSecret
+  type: apiKey
+  in: header
+  parameter: X-Account-Secret
+  description: Your Chameleon account secret. See https://developers.chameleon.io/api-introduction/authentication
+  sources:
+  - openapi/chameleon-openapi.yml
