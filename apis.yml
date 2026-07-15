@@ -32,6 +32,8 @@ apis:
       - type: Authentication
         url: https://developers.chameleon.io/api-introduction/authentication
 common:
+  - type: AgenticAccess
+    url: agentic-access/chameleon-agentic-access.yml
   - type: TrustCenter
     url: security/chameleon-trust-center.yml
   - type: DomainSecurity
