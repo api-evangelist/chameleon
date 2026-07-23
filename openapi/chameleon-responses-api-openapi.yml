@@ -1,0 +1,54 @@
+openapi: 3.1.0
+info:
+  title: Chameleon REST Alert Groups Responses API
+  version: '3'
+  description: 'Chameleon server-side REST API for managing in-app product Experiences:
+
+    user profiles, companies, segments, tours, microsurveys, launchers,
+
+    tooltips, webhooks, themes, deliveries, and analytics. Authenticates
+
+    with the X-Account-Secret header containing your account secret.
+
+    '
+  contact:
+    name: Chameleon Developer Portal
+    url: https://developers.chameleon.io/
+servers:
+- url: https://api.chameleon.io/v3
+security:
+- accountSecret: []
+tags:
+- name: Responses
+paths:
+  /analyze/responses:
+    get:
+      tags:
+      - Responses
+      summary: List microsurvey responses
+      operationId: listResponses
+      responses:
+        '200':
+          description: List
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ListEnvelope'
+components:
+  schemas:
+    ListEnvelope:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            type: object
+        next:
+          type: string
+          nullable: true
+  securitySchemes:
+    accountSecret:
+      type: apiKey
+      in: header
+      name: X-Account-Secret
+      description: Your Chameleon account secret. See https://developers.chameleon.io/api-introduction/authentication

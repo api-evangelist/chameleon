@@ -1,0 +1,73 @@
+openapi: 3.1.0
+info:
+  title: Chameleon REST Alert Groups Companies API
+  version: '3'
+  description: 'Chameleon server-side REST API for managing in-app product Experiences:
+
+    user profiles, companies, segments, tours, microsurveys, launchers,
+
+    tooltips, webhooks, themes, deliveries, and analytics. Authenticates
+
+    with the X-Account-Secret header containing your account secret.
+
+    '
+  contact:
+    name: Chameleon Developer Portal
+    url: https://developers.chameleon.io/
+servers:
+- url: https://api.chameleon.io/v3
+security:
+- accountSecret: []
+tags:
+- name: Companies
+paths:
+  /analyze/companies:
+    get:
+      tags:
+      - Companies
+      summary: List companies
+      operationId: listCompanies
+      responses:
+        '200':
+          description: List
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ListEnvelope'
+  /analyze/companies/{id}:
+    parameters:
+    - in: path
+      name: id
+      required: true
+      schema:
+        type: string
+    get:
+      tags:
+      - Companies
+      summary: Retrieve a company
+      operationId: getCompany
+      responses:
+        '200':
+          description: Company
+          content:
+            application/json:
+              schema:
+                type: object
+components:
+  schemas:
+    ListEnvelope:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            type: object
+        next:
+          type: string
+          nullable: true
+  securitySchemes:
+    accountSecret:
+      type: apiKey
+      in: header
+      name: X-Account-Secret
+      description: Your Chameleon account secret. See https://developers.chameleon.io/api-introduction/authentication
