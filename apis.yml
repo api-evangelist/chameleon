@@ -4,7 +4,20 @@ name: Chameleon
 kind: company
 description: >-
   Chameleon delivers in-app product tours, microsurveys, tooltips, launchers, and product demos to drive activation and feedback.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/chameleon.png
 tags:
   - Product
   - In-App Guidance
@@ -15,22 +28,193 @@ created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.19'
 apis:
-  - aid: chameleon:chameleon-rest-api
-    name: Chameleon REST API
-    description: >-
-      Chameleon REST API for managing user profiles, companies, tours, microsurveys, embeddables, segments, themes, webhooks, and other Experiences.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://developers.chameleon.io/
-    baseURL: https://api.chameleon.io/v3
-    tags:
-      - Product
-      - In-App Guidance
-      - REST
-    properties:
-      - type: Documentation
-        url: https://developers.chameleon.io/
-      - type: Authentication
-        url: https://developers.chameleon.io/api-introduction/authentication
+- aid: chameleon:chameleon-rest-api
+  name: Chameleon REST API
+  description: >-
+    Chameleon REST API for managing user profiles, companies, tours, microsurveys, embeddables, segments,
+    themes, webhooks, and other Experiences.
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://developers.chameleon.io/
+  baseURL: https://api.chameleon.io/v3
+  tags:
+  - Product
+  - In-App Guidance
+  - REST
+  properties:
+  - type: Documentation
+    url: https://developers.chameleon.io/
+  - type: Authentication
+    url: https://developers.chameleon.io/api-introduction/authentication
+- aid: chameleon:chameleon-alert-groups-api
+  name: Chameleon Alert Groups API
+  description: The Alert Groups API from Chameleon — 2 operation(s) for alert groups.
+  humanURL: https://developers.chameleon.io/
+  baseURL: https://api.chameleon.io/v3
+  tags:
+  - Alert Groups
+  properties:
+  - type: OpenAPI
+    url: openapi/chameleon-alert-groups-api-openapi.yml
+- aid: chameleon:chameleon-companies-api
+  name: Chameleon Companies API
+  description: The Companies API from Chameleon — 2 operation(s) for companies.
+  humanURL: https://developers.chameleon.io/
+  baseURL: https://api.chameleon.io/v3
+  tags:
+  - Companies
+  properties:
+  - type: OpenAPI
+    url: openapi/chameleon-companies-api-openapi.yml
+- aid: chameleon:chameleon-deliveries-api
+  name: Chameleon Deliveries API
+  description: The Deliveries API from Chameleon — 2 operation(s) for deliveries.
+  humanURL: https://developers.chameleon.io/
+  baseURL: https://api.chameleon.io/v3
+  tags:
+  - Deliveries
+  properties:
+  - type: OpenAPI
+    url: openapi/chameleon-deliveries-api-openapi.yml
+- aid: chameleon:chameleon-domains-api
+  name: Chameleon Domains API
+  description: The Domains API from Chameleon — 2 operation(s) for domains.
+  humanURL: https://developers.chameleon.io/
+  baseURL: https://api.chameleon.io/v3
+  tags:
+  - Domains
+  properties:
+  - type: OpenAPI
+    url: openapi/chameleon-domains-api-openapi.yml
+- aid: chameleon:chameleon-imports-api
+  name: Chameleon Imports API
+  description: The Imports API from Chameleon — 2 operation(s) for imports.
+  humanURL: https://developers.chameleon.io/
+  baseURL: https://api.chameleon.io/v3
+  tags:
+  - Imports
+  properties:
+  - type: OpenAPI
+    url: openapi/chameleon-imports-api-openapi.yml
+- aid: chameleon:chameleon-interactions-api
+  name: Chameleon Interactions API
+  description: The Interactions API from Chameleon — 2 operation(s) for interactions.
+  humanURL: https://developers.chameleon.io/
+  baseURL: https://api.chameleon.io/v3
+  tags:
+  - Interactions
+  properties:
+  - type: OpenAPI
+    url: openapi/chameleon-interactions-api-openapi.yml
+- aid: chameleon:chameleon-launchers-api
+  name: Chameleon Launchers API
+  description: The Launchers API from Chameleon — 2 operation(s) for launchers.
+  humanURL: https://developers.chameleon.io/
+  baseURL: https://api.chameleon.io/v3
+  tags:
+  - Launchers
+  properties:
+  - type: OpenAPI
+    url: openapi/chameleon-launchers-api-openapi.yml
+- aid: chameleon:chameleon-limit-groups-api
+  name: Chameleon Limit Groups API
+  description: The Limit Groups API from Chameleon — 2 operation(s) for limit groups.
+  humanURL: https://developers.chameleon.io/
+  baseURL: https://api.chameleon.io/v3
+  tags:
+  - Limit Groups
+  properties:
+  - type: OpenAPI
+    url: openapi/chameleon-limit-groups-api-openapi.yml
+- aid: chameleon:chameleon-microsurveys-api
+  name: Chameleon Microsurveys API
+  description: The Microsurveys API from Chameleon — 2 operation(s) for microsurveys.
+  humanURL: https://developers.chameleon.io/
+  baseURL: https://api.chameleon.io/v3
+  tags:
+  - Microsurveys
+  properties:
+  - type: OpenAPI
+    url: openapi/chameleon-microsurveys-api-openapi.yml
+- aid: chameleon:chameleon-profiles-api
+  name: Chameleon Profiles API
+  description: The Profiles API from Chameleon — 2 operation(s) for profiles.
+  humanURL: https://developers.chameleon.io/
+  baseURL: https://api.chameleon.io/v3
+  tags:
+  - Profiles
+  properties:
+  - type: OpenAPI
+    url: openapi/chameleon-profiles-api-openapi.yml
+- aid: chameleon:chameleon-properties-api
+  name: Chameleon Properties API
+  description: The Properties API from Chameleon — 2 operation(s) for properties.
+  humanURL: https://developers.chameleon.io/
+  baseURL: https://api.chameleon.io/v3
+  tags:
+  - Properties
+  properties:
+  - type: OpenAPI
+    url: openapi/chameleon-properties-api-openapi.yml
+- aid: chameleon:chameleon-responses-api
+  name: Chameleon Responses API
+  description: The Responses API from Chameleon — 1 operation(s) for responses.
+  humanURL: https://developers.chameleon.io/
+  baseURL: https://api.chameleon.io/v3
+  tags:
+  - Responses
+  properties:
+  - type: OpenAPI
+    url: openapi/chameleon-responses-api-openapi.yml
+- aid: chameleon:chameleon-segments-api
+  name: Chameleon Segments API
+  description: The Segments API from Chameleon — 2 operation(s) for segments.
+  humanURL: https://developers.chameleon.io/
+  baseURL: https://api.chameleon.io/v3
+  tags:
+  - Segments
+  properties:
+  - type: OpenAPI
+    url: openapi/chameleon-segments-api-openapi.yml
+- aid: chameleon:chameleon-tags-api
+  name: Chameleon Tags API
+  description: The Tags API from Chameleon — 2 operation(s) for tags.
+  humanURL: https://developers.chameleon.io/
+  baseURL: https://api.chameleon.io/v3
+  tags:
+  - Tags
+  properties:
+  - type: OpenAPI
+    url: openapi/chameleon-tags-api-openapi.yml
+- aid: chameleon:chameleon-tooltips-api
+  name: Chameleon Tooltips API
+  description: The Tooltips API from Chameleon — 2 operation(s) for tooltips.
+  humanURL: https://developers.chameleon.io/
+  baseURL: https://api.chameleon.io/v3
+  tags:
+  - Tooltips
+  properties:
+  - type: OpenAPI
+    url: openapi/chameleon-tooltips-api-openapi.yml
+- aid: chameleon:chameleon-tours-api
+  name: Chameleon Tours API
+  description: The Tours API from Chameleon — 2 operation(s) for tours.
+  humanURL: https://developers.chameleon.io/
+  baseURL: https://api.chameleon.io/v3
+  tags:
+  - Tours
+  properties:
+  - type: OpenAPI
+    url: openapi/chameleon-tours-api-openapi.yml
+- aid: chameleon:chameleon-webhooks-api
+  name: Chameleon Webhooks API
+  description: The Webhooks API from Chameleon — 2 operation(s) for webhooks.
+  humanURL: https://developers.chameleon.io/
+  baseURL: https://api.chameleon.io/v3
+  tags:
+  - Webhooks
+  properties:
+  - type: OpenAPI
+    url: openapi/chameleon-webhooks-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/chameleon-agentic-access.yml
