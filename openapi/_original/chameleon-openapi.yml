@@ -1,0 +1,445 @@
+openapi: 3.1.0
+info:
+  title: Chameleon REST API
+  version: "3"
+  description: |
+    Chameleon server-side REST API for managing in-app product Experiences:
+    user profiles, companies, segments, tours, microsurveys, launchers,
+    tooltips, webhooks, themes, deliveries, and analytics. Authenticates
+    with the X-Account-Secret header containing your account secret.
+  contact:
+    name: Chameleon Developer Portal
+    url: https://developers.chameleon.io/
+servers:
+  - url: https://api.chameleon.io/v3
+security:
+  - accountSecret: []
+tags:
+  - name: Profiles
+  - name: Companies
+  - name: Segments
+  - name: Tours
+  - name: Interactions
+  - name: Microsurveys
+  - name: Responses
+  - name: Deliveries
+  - name: Limit Groups
+  - name: Alert Groups
+  - name: Launchers
+  - name: Tooltips
+  - name: Webhooks
+  - name: Domains
+  - name: Tags
+  - name: Properties
+  - name: Imports
+paths:
+  /analyze/profiles:
+    get:
+      tags: [Profiles]
+      summary: List user profiles
+      operationId: listProfiles
+      responses:
+        "200":
+          description: List
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/ListEnvelope" }
+  /analyze/profiles/{id}:
+    parameters:
+      - { in: path, name: id, required: true, schema: { type: string } }
+    get:
+      tags: [Profiles]
+      summary: Retrieve a user profile
+      operationId: getProfile
+      responses:
+        "200":
+          description: Profile
+          content:
+            application/json:
+              schema: { type: object }
+  /analyze/companies:
+    get:
+      tags: [Companies]
+      summary: List companies
+      operationId: listCompanies
+      responses:
+        "200":
+          description: List
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/ListEnvelope" }
+  /analyze/companies/{id}:
+    parameters:
+      - { in: path, name: id, required: true, schema: { type: string } }
+    get:
+      tags: [Companies]
+      summary: Retrieve a company
+      operationId: getCompany
+      responses:
+        "200":
+          description: Company
+          content:
+            application/json:
+              schema: { type: object }
+  /edit/segments:
+    get:
+      tags: [Segments]
+      summary: List segments
+      operationId: listSegments
+      responses:
+        "200":
+          description: List
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/ListEnvelope" }
+  /edit/segments/{id}:
+    parameters:
+      - { in: path, name: id, required: true, schema: { type: string } }
+    get:
+      tags: [Segments]
+      summary: Retrieve a segment
+      operationId: getSegment
+      responses:
+        "200":
+          description: Segment
+          content:
+            application/json:
+              schema: { type: object }
+  /edit/tours:
+    get:
+      tags: [Tours]
+      summary: List tours
+      operationId: listTours
+      responses:
+        "200":
+          description: List
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/ListEnvelope" }
+  /edit/tours/{id}:
+    parameters:
+      - { in: path, name: id, required: true, schema: { type: string } }
+    get:
+      tags: [Tours]
+      summary: Retrieve a tour
+      operationId: getTour
+      responses:
+        "200":
+          description: Tour
+          content:
+            application/json:
+              schema: { type: object }
+  /analyze/interactions:
+    get:
+      tags: [Interactions]
+      summary: List tour interactions
+      operationId: listInteractions
+      responses:
+        "200":
+          description: List
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/ListEnvelope" }
+  /analyze/interactions/{id}:
+    parameters:
+      - { in: path, name: id, required: true, schema: { type: string } }
+    get:
+      tags: [Interactions]
+      summary: Retrieve a tour interaction
+      operationId: getInteraction
+      responses:
+        "200":
+          description: Interaction
+          content:
+            application/json:
+              schema: { type: object }
+  /edit/surveys:
+    get:
+      tags: [Microsurveys]
+      summary: List microsurveys
+      operationId: listSurveys
+      responses:
+        "200":
+          description: List
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/ListEnvelope" }
+  /edit/surveys/{id}:
+    parameters:
+      - { in: path, name: id, required: true, schema: { type: string } }
+    get:
+      tags: [Microsurveys]
+      summary: Retrieve a microsurvey
+      operationId: getSurvey
+      responses:
+        "200":
+          description: Survey
+          content:
+            application/json:
+              schema: { type: object }
+  /analyze/responses:
+    get:
+      tags: [Responses]
+      summary: List microsurvey responses
+      operationId: listResponses
+      responses:
+        "200":
+          description: List
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/ListEnvelope" }
+  /edit/deliveries:
+    get:
+      tags: [Deliveries]
+      summary: List experience deliveries
+      operationId: listDeliveries
+      responses:
+        "200":
+          description: List
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/ListEnvelope" }
+  /edit/delivery/{id}:
+    parameters:
+      - { in: path, name: id, required: true, schema: { type: string } }
+    get:
+      tags: [Deliveries]
+      summary: Retrieve an experience delivery
+      operationId: getDelivery
+      responses:
+        "200":
+          description: Delivery
+          content:
+            application/json:
+              schema: { type: object }
+  /edit/limit_groups:
+    get:
+      tags: [Limit Groups]
+      summary: List rate limit groups
+      operationId: listLimitGroups
+      responses:
+        "200":
+          description: List
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/ListEnvelope" }
+  /edit/limit_groups/{id}:
+    parameters:
+      - { in: path, name: id, required: true, schema: { type: string } }
+    get:
+      tags: [Limit Groups]
+      summary: Retrieve a rate limit group
+      operationId: getLimitGroup
+      responses:
+        "200":
+          description: Limit group
+          content:
+            application/json:
+              schema: { type: object }
+  /edit/alert_groups:
+    get:
+      tags: [Alert Groups]
+      summary: List alert groups
+      operationId: listAlertGroups
+      responses:
+        "200":
+          description: List
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/ListEnvelope" }
+  /edit/alert_groups/{id}:
+    parameters:
+      - { in: path, name: id, required: true, schema: { type: string } }
+    get:
+      tags: [Alert Groups]
+      summary: Retrieve an alert group
+      operationId: getAlertGroup
+      responses:
+        "200":
+          description: Alert group
+          content:
+            application/json:
+              schema: { type: object }
+  /edit/launchers:
+    get:
+      tags: [Launchers]
+      summary: List launchers
+      operationId: listLaunchers
+      responses:
+        "200":
+          description: List
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/ListEnvelope" }
+  /edit/launchers/{id}:
+    parameters:
+      - { in: path, name: id, required: true, schema: { type: string } }
+    get:
+      tags: [Launchers]
+      summary: Retrieve a launcher
+      operationId: getLauncher
+      responses:
+        "200":
+          description: Launcher
+          content:
+            application/json:
+              schema: { type: object }
+  /edit/tooltips:
+    get:
+      tags: [Tooltips]
+      summary: List tooltips
+      operationId: listTooltips
+      responses:
+        "200":
+          description: List
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/ListEnvelope" }
+  /edit/tooltips/{id}:
+    parameters:
+      - { in: path, name: id, required: true, schema: { type: string } }
+    get:
+      tags: [Tooltips]
+      summary: Retrieve a tooltip
+      operationId: getTooltip
+      responses:
+        "200":
+          description: Tooltip
+          content:
+            application/json:
+              schema: { type: object }
+  /edit/webhooks:
+    get:
+      tags: [Webhooks]
+      summary: List webhooks
+      operationId: listWebhooks
+      responses:
+        "200":
+          description: List
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/ListEnvelope" }
+  /edit/webhooks/{id}:
+    parameters:
+      - { in: path, name: id, required: true, schema: { type: string } }
+    get:
+      tags: [Webhooks]
+      summary: Retrieve a webhook
+      operationId: getWebhook
+      responses:
+        "200":
+          description: Webhook
+          content:
+            application/json:
+              schema: { type: object }
+  /edit/urls:
+    get:
+      tags: [Domains]
+      summary: List domains and environments
+      operationId: listDomains
+      responses:
+        "200":
+          description: List
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/ListEnvelope" }
+  /edit/urls/{id}:
+    parameters:
+      - { in: path, name: id, required: true, schema: { type: string } }
+    get:
+      tags: [Domains]
+      summary: Retrieve a domain
+      operationId: getDomain
+      responses:
+        "200":
+          description: Domain
+          content:
+            application/json:
+              schema: { type: object }
+  /edit/tags:
+    get:
+      tags: [Tags]
+      summary: List tags
+      operationId: listTags
+      responses:
+        "200":
+          description: List
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/ListEnvelope" }
+  /edit/tags/{id}:
+    parameters:
+      - { in: path, name: id, required: true, schema: { type: string } }
+    get:
+      tags: [Tags]
+      summary: Retrieve a tag
+      operationId: getTag
+      responses:
+        "200":
+          description: Tag
+          content:
+            application/json:
+              schema: { type: object }
+  /edit/properties:
+    get:
+      tags: [Properties]
+      summary: List data properties
+      operationId: listProperties
+      responses:
+        "200":
+          description: List
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/ListEnvelope" }
+  /edit/properties/{id}:
+    parameters:
+      - { in: path, name: id, required: true, schema: { type: string } }
+    get:
+      tags: [Properties]
+      summary: Retrieve a data property
+      operationId: getProperty
+      responses:
+        "200":
+          description: Property
+          content:
+            application/json:
+              schema: { type: object }
+  /edit/imports:
+    get:
+      tags: [Imports]
+      summary: List data imports
+      operationId: listImports
+      responses:
+        "200":
+          description: List
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/ListEnvelope" }
+  /edit/imports/{id}:
+    parameters:
+      - { in: path, name: id, required: true, schema: { type: string } }
+    get:
+      tags: [Imports]
+      summary: Retrieve a data import
+      operationId: getImport
+      responses:
+        "200":
+          description: Import
+          content:
+            application/json:
+              schema: { type: object }
+components:
+  securitySchemes:
+    accountSecret:
+      type: apiKey
+      in: header
+      name: X-Account-Secret
+      description: Your Chameleon account secret. See https://developers.chameleon.io/api-introduction/authentication
+  schemas:
+    ListEnvelope:
+      type: object
+      properties:
+        data:
+          type: array
+          items: { type: object }
+        next: { type: string, nullable: true }
