@@ -2,8 +2,8 @@ aid: chameleon
 url: https://raw.githubusercontent.com/api-evangelist/chameleon/refs/heads/main/apis.yml
 name: Chameleon
 kind: company
-description: >-
-  Chameleon delivers in-app product tours, microsurveys, tooltips, launchers, and product demos to drive activation and feedback.
+description: Chameleon delivers in-app product tours, microsurveys, tooltips, launchers, and product demos
+  to drive activation and feedback.
 accessModel:
   pricing: unknown
   onboarding: self-serve
@@ -19,20 +19,19 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/chameleon.png
 tags:
-  - Product
-  - In-App Guidance
-  - Onboarding
-  - Surveys
-  - Analytics
+- Product
+- In-App Guidance
+- Onboarding
+- Surveys
+- Analytics
 created: '2026-05-08'
-modified: '2026-05-08'
+modified: '2026-08-08'
 specificationVersion: '0.19'
 apis:
 - aid: chameleon:chameleon-rest-api
   name: Chameleon REST API
-  description: >-
-    Chameleon REST API for managing user profiles, companies, tours, microsurveys, embeddables, segments,
-    themes, webhooks, and other Experiences.
+  description: Chameleon REST API for managing user profiles, companies, tours, microsurveys, embeddables,
+    segments, themes, webhooks, and other Experiences.
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://developers.chameleon.io/
   baseURL: https://api.chameleon.io/v3
@@ -216,28 +215,40 @@ apis:
   - type: OpenAPI
     url: openapi/chameleon-webhooks-api-openapi.yml
 common:
-  - type: AgenticAccess
-    url: agentic-access/chameleon-agentic-access.yml
-  - type: TrustCenter
-    url: security/chameleon-trust-center.yml
-  - type: DomainSecurity
-    url: security/chameleon-domain-security.yml
-  - type: Authentication
-    url: authentication/chameleon-authentication.yml
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/chameleon-io
-  - type: Website
-    url: https://www.chameleon.io/
-  - type: Documentation
-    url: https://developers.chameleon.io/
-  - type: Plans
-    url: plans/chameleon-plans-pricing.yml
-  - type: RateLimits
-    url: rate-limits/chameleon-rate-limits.yml
-  - type: FinOps
-    url: finops/chameleon-finops.yml
-  - type: LlmsText
-    url: https://developers.chameleon.io/llms.txt
+- type: AgenticAccess
+  url: agentic-access/chameleon-agentic-access.yml
+- type: TrustCenter
+  url: security/chameleon-trust-center.yml
+- type: DomainSecurity
+  url: security/chameleon-domain-security.yml
+- type: Authentication
+  url: authentication/chameleon-authentication.yml
+- type: LinkedIn
+  url: https://www.linkedin.com/company/chameleon-io
+- type: Website
+  url: https://www.chameleon.io/
+- type: Documentation
+  url: https://developers.chameleon.io/
+- type: Plans
+  url: plans/chameleon-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/chameleon-rate-limits.yml
+- type: FinOps
+  url: finops/chameleon-finops.yml
+- type: LlmsText
+  url: https://developers.chameleon.io/llms.txt
+- type: GitHubOrg
+  url: https://github.com/chamaeleonidae
+- type: Blog
+  url: https://www.chameleon.io/blog
+- type: Pricing
+  url: https://www.chameleon.io/pricing
+- type: StatusPage
+  url: https://status.chameleon.io/
+- type: X
+  url: https://x.com/trychameleon
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
+x-merged-from:
+- chameleon-co
