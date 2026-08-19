@@ -1,0 +1,126 @@
+{
+  "item": [
+    {
+      "id": "03da2147-b0d7-4791-88c3-1a2bbdd54266",
+      "name": "Responses",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "b52c526b-c3b2-47f4-94b3-fb5aada16623",
+          "name": "List microsurvey responses",
+          "request": {
+            "name": "List microsurvey responses",
+            "description": {},
+            "url": {
+              "path": [
+                "analyze",
+                "responses"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9ffae59e-588d-4ae6-b291-763396c0cbc8",
+              "name": "List",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "analyze",
+                    "responses"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Account-Secret",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"next\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.chameleon.io/v3",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-Account-Secret"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "e9eb0928-daab-4c77-8bce-4812e480801e",
+    "name": "Chameleon REST Alert Groups Responses API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Chameleon server-side REST API for managing in-app product Experiences:\nuser profiles, companies, segments, tours, microsurveys, launchers,\ntooltips, webhooks, themes, deliveries, and analytics. Authenticates\nwith the X-Account-Secret header containing your account secret.\n\n\nContact Support:\n Name: Chameleon Developer Portal",
+      "type": "text/plain"
+    }
+  }
+}

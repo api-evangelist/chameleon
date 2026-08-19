@@ -1,0 +1,55 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Chameleon REST Alert Groups Imports API",
+    "version": "3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Account-Secret",
+      "value": "{{X-Account-Secret}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Imports",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List data imports",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.chameleon.io/v3/edit/imports"
+          },
+          "docs": "List data imports"
+        },
+        {
+          "info": {
+            "name": "Retrieve a data import",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.chameleon.io/v3/edit/imports/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve a data import"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

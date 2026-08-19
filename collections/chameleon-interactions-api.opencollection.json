@@ -1,0 +1,55 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Chameleon REST Alert Groups Interactions API",
+    "version": "3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Account-Secret",
+      "value": "{{X-Account-Secret}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Interactions",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List tour interactions",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.chameleon.io/v3/analyze/interactions"
+          },
+          "docs": "List tour interactions"
+        },
+        {
+          "info": {
+            "name": "Retrieve a tour interaction",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.chameleon.io/v3/analyze/interactions/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve a tour interaction"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

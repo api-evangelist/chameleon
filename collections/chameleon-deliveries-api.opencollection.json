@@ -1,0 +1,55 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Chameleon REST Alert Groups Deliveries API",
+    "version": "3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Account-Secret",
+      "value": "{{X-Account-Secret}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Deliveries",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List experience deliveries",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.chameleon.io/v3/edit/deliveries"
+          },
+          "docs": "List experience deliveries"
+        },
+        {
+          "info": {
+            "name": "Retrieve an experience delivery",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.chameleon.io/v3/edit/delivery/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve an experience delivery"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

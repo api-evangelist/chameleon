@@ -1,0 +1,55 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Chameleon REST Alert Groups Tours API",
+    "version": "3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Account-Secret",
+      "value": "{{X-Account-Secret}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Tours",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List tours",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.chameleon.io/v3/edit/tours"
+          },
+          "docs": "List tours"
+        },
+        {
+          "info": {
+            "name": "Retrieve a tour",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.chameleon.io/v3/edit/tours/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve a tour"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

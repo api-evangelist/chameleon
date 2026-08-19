@@ -1,0 +1,55 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Chameleon REST Alert Groups Properties API",
+    "version": "3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Account-Secret",
+      "value": "{{X-Account-Secret}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Properties",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List data properties",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.chameleon.io/v3/edit/properties"
+          },
+          "docs": "List data properties"
+        },
+        {
+          "info": {
+            "name": "Retrieve a data property",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.chameleon.io/v3/edit/properties/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve a data property"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,55 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Chameleon REST Alert Groups Tooltips API",
+    "version": "3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Account-Secret",
+      "value": "{{X-Account-Secret}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Tooltips",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List tooltips",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.chameleon.io/v3/edit/tooltips"
+          },
+          "docs": "List tooltips"
+        },
+        {
+          "info": {
+            "name": "Retrieve a tooltip",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.chameleon.io/v3/edit/tooltips/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve a tooltip"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

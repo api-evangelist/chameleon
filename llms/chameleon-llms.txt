@@ -1,0 +1,68 @@
+# Developer Docs
+
+## Docs
+
+- [Overview](https://developers.chameleon.io/introduction.md): Comprehensive API documentation for Chameleon's JavaScript API, REST API, and Webhooks. Send data, get data, and manage Experiences.
+- [Quickstart](https://developers.chameleon.io/quickstart.md): Get up and running with the Chameleon API in 5 minutes. Install the JavaScript snippet, identify a user, make your first REST API call, and set up a webhook.
+- [Authentication](https://developers.chameleon.io/concepts/authentication.md): Authentication is necessary to access the Chameleon API. To authenticate, you will need to retrieve an account-specific secret token.
+- [Errors](https://developers.chameleon.io/concepts/errors.md): Reference this page for HTTP status codes, error response formats, and troubleshooting guidance for the Chameleon API.
+- [Pagination](https://developers.chameleon.io/concepts/pagination.md): Pagination is a way to handle the structural inability to return all the results in a single HTTP request. For example, you may want to access the latest 2000 records from a total of 1 million.
+- [Rate limiting](https://developers.chameleon.io/concepts/rate-limiting.md): Rate limiting is used to prevent the frequency of an operation from exceeding some constraint, thus being crucial to the timely handling of all critical requests.
+- [Segmentation Filter Expressions](https://developers.chameleon.io/concepts/filters.md): A filter expression is a codified query used for user segmentation, containing a combination of keys and values that instruct the query builder.
+- [Normalization](https://developers.chameleon.io/concepts/normalization.md): Data in Chameleon is normalized for storage to eliminate redundancy and data inconsistency and to ensure proper querying and analysis.
+- [Listing Models](https://developers.chameleon.io/concepts/any-model.md): The Chameleon API allows a generic retrieval and listing of data models.
+- [Personalizing](https://developers.chameleon.io/concepts/personalizing.md): Personalizing is the way to adjust Experience content to match the User who is viewing an Chameleon Experience.
+- [Localization / Internationalization](https://developers.chameleon.io/apis/translation.md): The content of Chameleon Experiences can be Localized / Internationalized into a reasonable number of languages
+- [Custom Triggers](https://developers.chameleon.io/concepts/custom-triggers.md): Custom triggers allow users to create highly customizable and responsive experiences by using custom logic or leveraging promises to perform complex operations and dynamically control the visibility of experiences based on real-time data or user interactions.
+- [Overview](https://developers.chameleon.io/js/overview.md): The Javascript API is the client-side portion of Chameleon's API for accessing and manipulating client-side data.
+- [Send user properties via JS API](https://developers.chameleon.io/js/profiles.md): Sync user and company data to Chameleon for targeting users with Tours, personalizing content, and better URL matching.
+- [Product Demos](https://developers.chameleon.io/js/demos.md): A Product Demo is recorded by a Chameleon admin and shown to your end-users to demonstrate features and explain workflows.
+- [Send Events via JS API](https://developers.chameleon.io/js/events.md): Send Event data to Chameleon for targeting users with Tours based on what they have done and tracking Conversion Goals.
+- [Show a Tour via JS API](https://developers.chameleon.io/js/show-tour.md): Force a Chameleon Tour to show using the JavaScript API.
+- [Show a Launcher via JS API](https://developers.chameleon.io/js/show-launcher.md): Force a Chameleon Launcher to show using the JavaScript API.
+- [Start an Automation via JS API](https://developers.chameleon.io/js/show-automation.md): Start a Chameleon Automation using the JavaScript API.
+- [Show a Product Demo via JS API](https://developers.chameleon.io/js/show-demo.md): Trigger a Chameleon Product Demo using the JavaScript API.
+- [Listen to Chameleon events (`chmln.on()`)](https://developers.chameleon.io/js/listen.md): Register a callback to certain state changes and events. This can be useful for custom integrations with Chameleon
+- [Installing correctly](https://developers.chameleon.io/guides/js/installing-correctly.md): In your SaaS product you likely have Users and Accounts (simply a group of Users often from the same real Company)
+- [Installing in Single Page Apps](https://developers.chameleon.io/guides/js/single-page-apps.md): How to install and configure Chameleon in React, Vue, Angular, and other Single Page Applications.
+- [Testing Webhooks](https://developers.chameleon.io/guides/webhooks/testing-webhooks.md): How to test Chameleon webhooks locally, verify signatures, and debug common issues.
+- [Bulk Operations](https://developers.chameleon.io/guides/api/bulk-operations.md): Patterns for bulk tagging, bulk imports, pagination through large datasets, and handling rate limits.
+- [Search your User-generated content](https://developers.chameleon.io/guides/helpbar/user-generated-content.md): Learn how to make your User-generated content searchable with the HelpBar.
+- [Bulk Tagging](https://developers.chameleon.io/guides/scripts/bulk-tagging.md): Bulk tagging is helpful to update your account with a new tagging system or daily/weekly correctness checks for tags
+- [Overview](https://developers.chameleon.io/webhooks/overview.md): Chameleon supports a robust data pipeline including receiving data from many sources and sending Chameleon Experience data to your connected destinations.
+- [Outgoing Webhooks](https://developers.chameleon.io/webhooks/outgoing.md): Receive real-time events when users interact with your Chameleon Experiences. Configure endpoints to receive Tour, Survey, Embed, Demo, HelpBar, and Alert webhooks.
+- [User Profiles (Incoming Webhook)](https://developers.chameleon.io/webhooks/profiles.md): Send User Profile data to Chameleon from services like Customer.io, Heap, Zapier, Hightouch, Census or from your own backend.
+- [Events (Incoming Webhook)](https://developers.chameleon.io/webhooks/events.md): Track Events to Chameleon from services like Customer.io, Heap, Zapier or from your own backend.
+- [Companies (Incoming Webhook)](https://developers.chameleon.io/webhooks/companies.md): Send Company data to Chameleon from services like Customer.io, Heap, Zapier or from your own backend.
+- [Overview](https://developers.chameleon.io/apis/overview.md): Chameleon's REST API allows you to interact with information in Chameleon to integrate it with your own systems. It's meant to be flexible and adapt to your own use cases.
+- [User Profiles](https://developers.chameleon.io/apis/profiles.md): User Profiles represent your product's end-users: real individuals who were identified to Chameleon. They can store complex (semi-arbitrary) properties about who they are.
+- [Searching and Counting User Profiles](https://developers.chameleon.io/apis/profiles-search.md): User Profiles represent your *product's end-users*: real individuals who were identified to Chameleon.
+- [Companies](https://developers.chameleon.io/apis/companies.md): Companies represent your *accounts*: real customers who were identified to Chameleon. They can store complex (semi-arbitrary) properties.
+- [Segments](https://developers.chameleon.io/apis/segments.md): Segments are fundamental to targeting users within Chameleon. They are used for Microsurveys, Tours and Launchers to make sure the right users see the right content at the right moment.
+- [Tours](https://developers.chameleon.io/apis/tours.md): A Tour is a sequence of steps that shows to your end-users when they meet all of the predefined matching criteria, including:
+- [Embeddables](https://developers.chameleon.io/apis/embeddables.md): Embeddables are persistent, in-app widgets that can be embedded directly into your product's UI. Unlike Tours that appear as overlays, Embeddables are rendered inline within your application.
+- [Microsurveys](https://developers.chameleon.io/apis/surveys.md): Chameleon Microsurveys are a primary question step that allows you to get immediate and contextual user feedback.
+- [Tooltips](https://developers.chameleon.io/apis/tooltips.md): A Tooltip is a single step which can be shown when your end-users click or hover on either:
+- [Launchers](https://developers.chameleon.io/apis/launchers.md): A Launcher is a collection of items shown in a menu to your end-users when they meet all of the predefined matching criteria
+- [Product Demos](https://developers.chameleon.io/apis/demos.md): A Product Demo is recorded with the Chameleon Chrome extension to show product features to prospects, introduce new features, explain complex workflows, and drive adoption.
+- [Deliveries](https://developers.chameleon.io/apis/deliveries.md): Deliveries are used to directly trigger an Experience to one specific User.
+- [HelpBar](https://developers.chameleon.io/apis/search.md): Add a HelpBar to your product that allows your Users to search your Help center, Product, and any custom content for straightforward federated search.
+- [Tour Interactions](https://developers.chameleon.io/apis/tour-interactions.md): A Tour Interaction is a state object which contains the current view of a Tour for a specific User Profile.
+- [Microsurvey Responses](https://developers.chameleon.io/apis/survey-responses.md): A Microsurvey response is a single object with all of the information about the survey interactions: the buttons clicked on the first step, the text input entered in the follow-up step, and the time that the survey was finished.
+- [Steps](https://developers.chameleon.io/apis/steps.md): Steps are the building blocks of Tours, Microsurveys, and Embeddables. Each Step defines the content, positioning, triggers, and interactions for a single screen in an Experience.
+- [Elements](https://developers.chameleon.io/apis/elements.md): Elements define which HTML element an experience will be anchored to, positioned next to, triggered from, or dismissed when clicked.
+- [Buttons](https://developers.chameleon.io/apis/buttons.md): Buttons are the configuration for a specific call to action on a Step. They contain information about styling, positioning, and any actions that should be taken when clicked.
+- [Themes](https://developers.chameleon.io/apis/themes.md): Themes define the visual styling for your Chameleon Experiences. Use the Themes API to list and retrieve your configured Themes.
+- [Properties](https://developers.chameleon.io/apis/properties.md): Properties track the specific data sent to Chameleon via custom data properties to [User Profiles](/apis/profiles) or [Companies](/apis/companies).
+- [Event Names](https://developers.chameleon.io/apis/event-names.md): Event Names represent the tracked and custom events in your Chameleon account. Use the Event Names API to list and retrieve your configured events.
+- [Domains and Environments](https://developers.chameleon.io/apis/urls.md)
+- [Tags](https://developers.chameleon.io/apis/tags.md): A Tag is a grouping of Experiences based on a readable name (e.g. Upsell, Feature, etc.)
+- [Rate Limit Groups](https://developers.chameleon.io/apis/limit-groups.md): Rate Limit Groups are used for Microsurveys and Tours to make sure no more than X Experiences per Y time period are shown to a user.
+- [Alert Groups](https://developers.chameleon.io/apis/alert-groups.md): Alert Groups are used for Tours and Microsurveys to notify any relevant Team members when an Experience is in violation of the alert conditions.
+- [Data Imports](https://developers.chameleon.io/apis/imports.md): Imports are used to add data to Chameleon via CSV. Each row should correspond with one record in the Chameleon database. You may import data into User Profiles or Companies with the model_kind property.
+- [Changes](https://developers.chameleon.io/apis/changes.md): Changes are a record of every update made to your key models (Experiences).
+- [Webhooks](https://developers.chameleon.io/apis/webhooks.md): This doc is all about how to manage your webhook subscriptions via API.
+
+## OpenAPI Specs
+
+- [openapi](https://developers.chameleon.io/api-reference/openapi.json)

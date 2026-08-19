@@ -1,0 +1,55 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Chameleon REST Alert Groups Limit Groups API",
+    "version": "3"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Account-Secret",
+      "value": "{{X-Account-Secret}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Limit Groups",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List rate limit groups",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.chameleon.io/v3/edit/limit_groups"
+          },
+          "docs": "List rate limit groups"
+        },
+        {
+          "info": {
+            "name": "Retrieve a rate limit group",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.chameleon.io/v3/edit/limit_groups/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve a rate limit group"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
