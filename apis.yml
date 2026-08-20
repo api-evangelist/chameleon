@@ -210,6 +210,8 @@ apis:
   humanURL: https://developers.chameleon.io/
   baseURL: https://api.chameleon.io/v3
   tags:
+  - Webhook
+  tags_raw:
   - Webhooks
   properties:
   - type: OpenAPI
