@@ -6,13 +6,18 @@
   "note": "No RSS/Atom feed at common paths (feed/, rss/, feed.xml, atom.xml, index.xml, rss.xml all 404/503). HTML blog at https://www.chameleon.io/blog lists posts but exposes no parseable publish dates in the listing or in post article:published_time meta; not backfilling undated archive.",
   "feeds": [
     {
+      "source": "https://github.com/chamaeleonidae",
+      "feed_url": "https://github.com/chamaeleonidae",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
       "source": "https://www.chameleon.io/inspiration/feed",
       "feed_url": "https://www.chameleon.io/inspiration/feed",
       "title": "",
       "saved": 0,
-      "method": "feed",
-      "nature": "undetermined",
-      "nature_basis": null
+      "method": "feed"
     },
     {
       "source": "https://www.linkedin.com/company/chameleon-io",
@@ -20,16 +25,9 @@
       "title": "",
       "saved": 0,
       "method": "none"
-    },
-    {
-      "source": "https://github.com/chamaeleonidae",
-      "feed_url": "https://github.com/chamaeleonidae",
-      "title": "",
-      "saved": 0,
-      "method": "none"
     }
   ],
-  "fetched": "2026-08-30T22:33:40Z",
+  "fetched": "2026-09-06T19:17:18Z",
   "post_count": 53,
   "feed_nature": "undetermined",
   "feed_nature_basis": null,
