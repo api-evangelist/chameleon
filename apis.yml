@@ -103,6 +103,8 @@ apis:
   humanURL: https://developers.chameleon.io/
   baseURL: https://api.chameleon.io/v3
   tags:
+  - Import
+  tags_raw:
   - Imports
   properties:
   - type: OpenAPI
