@@ -1,23 +1,7 @@
 {
   "provider": "chameleon",
   "sources": [
-    "chameleon-alert-groups-api-openapi.yml",
-    "chameleon-companies-api-openapi.yml",
-    "chameleon-deliveries-api-openapi.yml",
-    "chameleon-domains-api-openapi.yml",
-    "chameleon-imports-api-openapi.yml",
-    "chameleon-interactions-api-openapi.yml",
-    "chameleon-launchers-api-openapi.yml",
-    "chameleon-limit-groups-api-openapi.yml",
-    "chameleon-microsurveys-api-openapi.yml",
-    "chameleon-profiles-api-openapi.yml",
-    "chameleon-properties-api-openapi.yml",
-    "chameleon-responses-api-openapi.yml",
-    "chameleon-segments-api-openapi.yml",
-    "chameleon-tags-api-openapi.yml",
-    "chameleon-tooltips-api-openapi.yml",
-    "chameleon-tours-api-openapi.yml",
-    "chameleon-webhooks-api-openapi.yml"
+    "_original/chameleon-openapi.yml"
   ],
   "outputs": [
     "chameleon-alert-groups-api-openapi.yml",
@@ -41,6 +25,28 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "chameleon-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "chameleon-alert-groups-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "chameleon-companies-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "chameleon-deliveries-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "chameleon-domains-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "chameleon-imports-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "chameleon-interactions-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "chameleon-launchers-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "chameleon-limit-groups-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "chameleon-microsurveys-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "chameleon-profiles-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "chameleon-properties-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "chameleon-responses-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "chameleon-segments-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "chameleon-tags-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "chameleon-tooltips-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "chameleon-tours-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "chameleon-webhooks-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }

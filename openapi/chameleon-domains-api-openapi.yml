@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Chameleon REST Alert Groups Domains API
+  title: Chameleon REST Domains API
   version: '3'
   description: 'Chameleon server-side REST API for managing in-app product Experiences:
 
@@ -8,9 +8,7 @@ info:
 
     tooltips, webhooks, themes, deliveries, and analytics. Authenticates
 
-    with the X-Account-Secret header containing your account secret.
-
-    '
+    with the X-Account-Secret header containing your account secret.'
   contact:
     name: Chameleon Developer Portal
     url: https://developers.chameleon.io/
