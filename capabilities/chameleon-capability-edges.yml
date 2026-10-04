@@ -1,0 +1,43 @@
+slug: chameleon
+provider: Chameleon
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 3
+edges:
+- tag: Microsurveys
+  spec_file: chameleon-microsurveys-api-openapi.yml
+  capability_id: BC-430.50
+  capability_id_l1: BC-430
+  capability_name: Customer Feedback Management
+  confidence: 0.72
+  evidence: GET /edit/surveys listSurveys "List microsurveys"; vendor "delivers in-app product tours,
+    microsurveys ... to drive activation and feedback"
+  reason: In-app microsurveys are a voice-of-customer / feedback instrument; the operations manage survey
+    definitions. Customer Feedback Management is the closest fit, though it could also be read as product
+    telemetry/insight collection.
+- tag: Responses
+  spec_file: chameleon-responses-api-openapi.yml
+  capability_id: BC-430.50
+  capability_id_l1: BC-430
+  capability_name: Customer Feedback Management
+  confidence: 0.72
+  evidence: GET /analyze/responses listResponses "List microsurvey responses"
+  reason: Retrieval of survey responses from customers is feedback/voice-of-customer data collection.
+- tag: Webhooks
+  spec_file: chameleon-webhooks-api-openapi.yml
+  capability_id: BC-4270.80
+  capability_id_l1: BC-4270
+  capability_name: Webhook & Event Subscription Management
+  confidence: 0.7
+  evidence: GET /edit/webhooks listWebhooks "List webhooks"; description mentions "webhooks, themes, deliveries"
+  reason: Management of outbound webhook subscriptions exposed to integrators matches the webhook/event
+    subscription capability explicitly present in the frame.

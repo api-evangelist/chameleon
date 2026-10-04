@@ -236,6 +236,9 @@ apis:
   - type: OpenAPI
     url: openapi/chameleon-webhooks-api-openapi.yml
 common:
+- type: CapabilityMap
+  url: capabilities/chameleon-capability-edges.yml
+  name: Chameleon Business Capability Map
 - type: AgenticAccess
   url: agentic-access/chameleon-agentic-access.yml
 - type: TrustCenter
