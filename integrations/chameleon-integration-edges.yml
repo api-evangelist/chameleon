@@ -80,6 +80,23 @@ edges:
     builder: Fivetran
   detected_by: sweep-data-integration.py
   first_seen: '2026-10-18'
+- partner_name: Intercom (own)
+  partner: intercom
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.intercom.com/app-store/?app_package_code=chameleon
+  mirror_of: intercom/integrations/intercom-integration-edges.yml
+  apps:
+  - Chameleon
+  listing_count: 1
+  detected: '2026-10-23'
+  detected_by: mirror-platform-listings.py
+  category: Knowledge sources
 method: searched
 checked:
 - https://connectors.airbyte.com/files/registries/v0/cloud_registry.json
@@ -87,4 +104,5 @@ checked:
 - https://fivetran.com/docs-sitemap.xml
 - https://fivetran.com/docs/connectors/partner-built-program
 - https://hightouch.com/docs/destinations/chameleon
+- intercom/integrations/intercom-integration-edges.yml
 source: https://hightouch.com/docs/destinations/chameleon
