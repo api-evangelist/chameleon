@@ -1,4 +1,4 @@
-# Chameleon (chameleon)
+# Chameleon
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,54 +66,157 @@
 
 Chameleon delivers in-app product tours, microsurveys, tooltips, launchers, and product demos to drive activation and feedback.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/chameleon/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/chameleon/refs/heads/main/apis.yml)
+**Areas:** Product · In-App Guidance · Onboarding · Surveys · Analytics
 
-## Tags
+## Chameleon on APIs.io
 
-- Product
-- In-App Guidance
-- Onboarding
-- Surveys
-- Analytics
+Everything profiled for Chameleon is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/chameleon/](https://apis.io/providers/chameleon/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (18)
 
-- **Created:** 2026-05-08
-- **Modified:** 2026-05-08
+- [Chameleon REST API](https://apis.io/apis/chameleon/chameleon-rest-api/) — Chameleon REST API for managing user profiles, companies, tours, microsurveys, embeddables, segments, themes, webhooks, and other Experiences.
+- [Chameleon Alert Groups API](https://apis.io/apis/chameleon/chameleon-alert-groups-api/) — The Alert Groups API from Chameleon — 2 operation(s) for alert groups.
+- [Chameleon Companies API](https://apis.io/apis/chameleon/chameleon-companies-api/) — The Companies API from Chameleon — 2 operation(s) for companies.
+- [Chameleon Deliveries API](https://apis.io/apis/chameleon/chameleon-deliveries-api/) — The Deliveries API from Chameleon — 2 operation(s) for deliveries.
+- [Chameleon Domains API](https://apis.io/apis/chameleon/chameleon-domains-api/) — The Domains API from Chameleon — 2 operation(s) for domains.
+- [Chameleon Imports API](https://apis.io/apis/chameleon/chameleon-imports-api/) — The Imports API from Chameleon — 2 operation(s) for imports.
+- [Chameleon Interactions API](https://apis.io/apis/chameleon/chameleon-interactions-api/) — The Interactions API from Chameleon — 2 operation(s) for interactions.
+- [Chameleon Launchers API](https://apis.io/apis/chameleon/chameleon-launchers-api/) — The Launchers API from Chameleon — 2 operation(s) for launchers.
+- [Chameleon Limit Groups API](https://apis.io/apis/chameleon/chameleon-limit-groups-api/) — The Limit Groups API from Chameleon — 2 operation(s) for limit groups.
+- [Chameleon Microsurveys API](https://apis.io/apis/chameleon/chameleon-microsurveys-api/) — The Microsurveys API from Chameleon — 2 operation(s) for microsurveys.
+- [Chameleon Profiles API](https://apis.io/apis/chameleon/chameleon-profiles-api/) — The Profiles API from Chameleon — 2 operation(s) for profiles.
+- [Chameleon Properties API](https://apis.io/apis/chameleon/chameleon-properties-api/) — The Properties API from Chameleon — 2 operation(s) for properties.
+- [Chameleon Responses API](https://apis.io/apis/chameleon/chameleon-responses-api/) — The Responses API from Chameleon — 1 operation(s) for responses.
+- [Chameleon Segments API](https://apis.io/apis/chameleon/chameleon-segments-api/) — The Segments API from Chameleon — 2 operation(s) for segments.
+- [Chameleon Tags API](https://apis.io/apis/chameleon/chameleon-tags-api/) — The Tags API from Chameleon — 2 operation(s) for tags.
+- [Chameleon Tooltips API](https://apis.io/apis/chameleon/chameleon-tooltips-api/) — The Tooltips API from Chameleon — 2 operation(s) for tooltips.
+- [Chameleon Tours API](https://apis.io/apis/chameleon/chameleon-tours-api/) — The Tours API from Chameleon — 2 operation(s) for tours.
+- [Chameleon Webhooks API](https://apis.io/apis/chameleon/chameleon-webhooks-api/) — The Webhooks API from Chameleon — 2 operation(s) for webhooks.
 
-## APIs
+### Published properties
 
-### Chameleon REST API
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Chameleon REST API for managing user profiles, companies, tours, microsurveys, embeddables, segments, themes, webhooks, and other Experiences.
+#### Agentic access (1)
 
-- **Human URL:** [https://developers.chameleon.io/](https://developers.chameleon.io/)
-- **Base URL:** `https://api.chameleon.io/v3`
+Which operations an agent can call, which act, and which need a human in the loop.
 
-#### Tags
+- [Chameleon Agentic Access](https://apis.io/agentic-access/chameleon/chameleon-agentic-access/)
 
-- Product
-- In-App Guidance
-- REST
+#### JSON-LD (1)
 
-#### Properties
+Linked-data contexts for the provider's vocabulary.
 
-- [Documentation](https://developers.chameleon.io/)
-- [Authentication](https://developers.chameleon.io/api-introduction/authentication)
-- [Postman Collection](collections/chameleon.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/chameleon.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Chameleon Context](https://apis.io/jsonld/chameleon/chameleon-context/)
 
-## Common Properties
+#### Collections (18)
 
-- [LinkedIn](https://www.linkedin.com/company/chameleon-io)
+Postman and Open Collection request collections.
+
+- [Chameleon REST API](https://apis.io/collections/chameleon/open-chameleon/)
+- [Chameleon REST Alert Groups API](https://apis.io/collections/chameleon/open-chameleon-alert-groups-api/)
+- [Chameleon REST Alert Groups Companies API](https://apis.io/collections/chameleon/open-chameleon-companies-api/)
+- [Chameleon REST Alert Groups Deliveries API](https://apis.io/collections/chameleon/open-chameleon-deliveries-api/)
+- [Chameleon REST Alert Groups Domains API](https://apis.io/collections/chameleon/open-chameleon-domains-api/)
+- [Chameleon REST Alert Groups Imports API](https://apis.io/collections/chameleon/open-chameleon-imports-api/)
+- [Chameleon REST Alert Groups Interactions API](https://apis.io/collections/chameleon/open-chameleon-interactions-api/)
+- [Chameleon REST Alert Groups Launchers API](https://apis.io/collections/chameleon/open-chameleon-launchers-api/)
+- [Chameleon REST Alert Groups Limit Groups API](https://apis.io/collections/chameleon/open-chameleon-limit-groups-api/)
+- [Chameleon REST Alert Groups Microsurveys API](https://apis.io/collections/chameleon/open-chameleon-microsurveys-api/)
+- [Chameleon REST Alert Groups Profiles API](https://apis.io/collections/chameleon/open-chameleon-profiles-api/)
+- [Chameleon REST Alert Groups Properties API](https://apis.io/collections/chameleon/open-chameleon-properties-api/)
+- [Chameleon REST Alert Groups Responses API](https://apis.io/collections/chameleon/open-chameleon-responses-api/)
+- [Chameleon REST Alert Groups Segments API](https://apis.io/collections/chameleon/open-chameleon-segments-api/)
+- [Chameleon REST Alert Groups Tags API](https://apis.io/collections/chameleon/open-chameleon-tags-api/)
+- [Chameleon REST Alert Groups Tooltips API](https://apis.io/collections/chameleon/open-chameleon-tooltips-api/)
+- [Chameleon REST Alert Groups Tours API](https://apis.io/collections/chameleon/open-chameleon-tours-api/)
+- [Chameleon REST Alert Groups Webhooks API](https://apis.io/collections/chameleon/open-chameleon-webhooks-api/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Chameleon Authentication](https://apis.io/security/chameleon/chameleon-authentication/)
+- [Chameleon Domain Security](https://apis.io/security/chameleon/chameleon-domain-security/)
+- [Chameleon Trust Center](https://apis.io/security/chameleon/chameleon-trust-center/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Chameleon Plans Pricing](https://apis.io/plans/chameleon/chameleon-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Chameleon Rate Limits](https://apis.io/rate-limits/chameleon/chameleon-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Chameleon Finops](https://apis.io/finops/chameleon/chameleon-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://www.chameleon.io/)
 - [Documentation](https://developers.chameleon.io/)
-- [Plans](plans/chameleon-plans-pricing.yml)
-- [Rate Limits](rate-limits/chameleon-rate-limits.yml)
-- [Fin Ops](finops/chameleon-finops.yml)
-- [L L Ms Txt](https://developers.chameleon.io/llms.txt)
+- [Pricing](https://www.chameleon.io/pricing)
+- [Blog](https://www.chameleon.io/blog)
+- [Status](https://status.chameleon.io/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 30.6** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 50.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 23.7 |
+
+**Agent readiness 20.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 21.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/chameleon/](https://apis.io/providers/chameleon/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Chameleon: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/chameleon/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
